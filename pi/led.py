@@ -4,7 +4,7 @@
 import RPi.GPIO
 import time
 
-R,G,B=15,18,14
+R,G,B=25,8,7
 
 RPi.GPIO.setmode(RPi.GPIO.BCM)
 
