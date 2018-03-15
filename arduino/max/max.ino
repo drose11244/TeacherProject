@@ -1,17 +1,21 @@
 #include <Servo.h>
 
-#define TRIGGER 5
-#define ECHO    4
-
-#define LEDR 14
-#define LEDG 12
-#define LEDB 13
-
-int M1_Left = 0; //Direccion
-int M1_Right = 2; //Direccion
-
 Servo myservoA;
 Servo myservoB;
+
+#define TRIGGER 17
+#define ECHO    16
+
+#define LEDR 13
+#define LEDG 12
+#define LEDB 11
+
+int M1_Left = 18; 
+int M1_Right = 19; 
+
+int serA =14;
+int serB =15;
+
 int limit =180;
 int sped =5;
 
@@ -77,10 +81,10 @@ void setup()
   
   pinMode(TRIGGER, OUTPUT);
   pinMode(ECHO, INPUT);
-  pinMode(BUILTIN_LED, OUTPUT);
+//  pinMode(BUILTIN_LED, OUTPUT);
 
-  myservoA.attach(9, 500, 2400); // 修正脈衝寬度範圍
-  myservoB.attach(10, 500, 2400); // 修正脈衝寬度範圍
+  myservoA.attach(serA, 500, 2400); // 修正脈衝寬度範圍
+  myservoB.attach(serB, 500, 2400); // 修正脈衝寬度範圍
   myservoA.write(0);
   myservoB.write(180);
 

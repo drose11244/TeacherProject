@@ -8,8 +8,8 @@ int sped =5;
 
 void setup()
 {
-  myservoA.attach(15, 500, 2400); // 修正脈衝寬度範圍
-  myservoB.attach(13, 500, 2400); // 修正脈衝寬度範圍
+  myservoA.attach(14, 500, 2400); // 修正脈衝寬度範圍
+  myservoB.attach(15, 500, 2400); // 修正脈衝寬度範圍
   myservoA.write(0);
   myservoB.write(180);
   delay(3000);

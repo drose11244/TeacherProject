@@ -1,6 +1,6 @@
-#define LEDR 14 //D0=16=Red
+#define LEDR 13 //D0=16=Red
 #define LEDG 12 //D1=5=Green
-#define LEDB 13 //D2=4=Blue
+#define LEDB 11 //D2=4=Blue
 
 
 void turnOff(){

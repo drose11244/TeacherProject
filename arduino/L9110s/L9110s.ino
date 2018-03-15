@@ -1,5 +1,5 @@
-int M1_Left = 0; //Direccion
-int M1_Right = 2; //Direccion
+int M1_Left = 18; //Direccion
+int M1_Right = 19; //Direccion
 
 void setup()
 {

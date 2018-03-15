@@ -3,8 +3,8 @@
 14CORE ULTRASONIC DISTANCE SENSOR CODE TEST
 ********************************************
 */
-#define TRIGGER 5
-#define ECHO    4
+#define TRIGGER 17
+#define ECHO    16
 
 // NodeMCU Pin D1 > TRIGGER | Pin D2 > ECHO
 
@@ -13,7 +13,7 @@ void setup() {
   Serial.begin (9600);
   pinMode(TRIGGER, OUTPUT);
   pinMode(ECHO, INPUT);
-  pinMode(BUILTIN_LED, OUTPUT);
+//  pinMode(BUILTIN_LED, OUTPUT);
 }
 
 void loop() {
