@@ -1,4 +1,4 @@
-//宣告腳位
+//宣告LED腳位
 #define LED_C_Red 13
 #define LED_C_Green 12 
 #define LED_C_Blue 11
